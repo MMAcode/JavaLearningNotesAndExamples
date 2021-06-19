@@ -3,6 +3,8 @@ package main;
 import java.io.IOException;
 import java.util.Date;
 
+import static helpers.StaticHelpers.p;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -14,6 +16,9 @@ public class Main {
         System.out.printf("ahoj %s%s\n","1",22,33); // %s %s pass multiple values
         System.out.printf("ahoj %3$s %2$s\n","1",22,33); //2$ with specific position
         System.out.printf("ahoj %1$s %1$S %1$10s\n","bye"); //use 1 value multiple times
+
+        String str = String.format("ahoj %1$s %1$S %1$10s\n","bye"); //use 1 value multiple times
+        p("Formated string: "+str);
 
         System.out.printf("%10d\n",732832); // d whole digits (numbers)
         System.out.printf("%3d\n",732832);
