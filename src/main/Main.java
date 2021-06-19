@@ -1,6 +1,9 @@
 package main;
 
-class Main_{ public static void main(String [] args) { }}
+class Main_{
+    public static void main(String [] args) { System.out.println("from main_"); }
+    public static void testMe(){System.out.println("from main_ testme");};
+} // nothing from this class will be accessible in other packages
 //protected class Main_{ public static void main(String [] args) { }}
 //private class Main_{ public static void main(String [] args) { }}
 
