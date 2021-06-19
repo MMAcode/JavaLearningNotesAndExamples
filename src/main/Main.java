@@ -6,6 +6,7 @@ import java.util.Date;
 public class Main {
 
     public static void main(String[] args) {
+//        gco="!Invoke_Item 'C:\ProgramData/Git/config'"
         System.out.printf("%s\n","12345678"); // %s  string
         System.out.printf("%5s\n","hi"); // %s  string    %5s of min length 3 - fills gaps with spaces
         System.out.printf("%5s\n","hi"); // %s  string    %5s of min length 3 - fills gaps with spaces
