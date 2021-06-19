@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.util.Date;
 
 import static helpers.StaticHelpers.p;
+import static helpers.StaticHelpers.pf;
 
 
 public class Main {
@@ -29,6 +30,9 @@ public class Main {
 //        System.out.printf("%10.2f\n",7328320); // this doesn't compile as java is expecting decimal number
         System.out.printf("%10.2f\n",7328320/3); // this doesn't compile as java is expecting decimal number, but this devision results in int value without reminder
         System.out.printf("%013.2f\n",732.832d); //fill with zeroes before
+
+        pf("|%10d|", 101);  // Specifying length of integer
+        pf("|%-10d|", 101); // Left-justifying within the specified width
 
 //        System.out.printf("%13s\n",732.832d);
         System.out.printf("%10s\n","12345678");
