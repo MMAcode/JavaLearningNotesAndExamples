@@ -26,6 +26,8 @@ public class Main {
 
         System.out.printf("%13.2f\n",732.832d); //f decimals .3 decimal precision
         System.out.printf("%10.2f\n",7328320f);
+//        System.out.printf("%10.2f\n",7328320); // this doesn't compile as java is expecting decimal number
+        System.out.printf("%10.2f\n",7328320/3); // this doesn't compile as java is expecting decimal number, but this devision results in int value without reminder
         System.out.printf("%013.2f\n",732.832d); //fill with zeroes before
 
 //        System.out.printf("%13s\n",732.832d);
