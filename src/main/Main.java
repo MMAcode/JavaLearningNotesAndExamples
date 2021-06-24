@@ -4,6 +4,7 @@ package main;
  * on top level:
  *  only one class or interface (not both together) can be public and must match file name
  *  only public and none=default access modifiers can be used on class and interface
+ *  interface default access modifier is not public, but as any other scope on variables. Only interface methods are public by default.
  *
  *  on inner class/interfaces any access modifier can be applied
  */
