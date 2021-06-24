@@ -1,6 +1,7 @@
 package helpers;
 
-public class StaticHelpers {
+
+public class StaticHelpers implements {
     public static void p(Object o,Boolean... printClassName){
 //        String classNameShort=o.getClass().getSimpleName();
         String className =o.getClass().getName();
