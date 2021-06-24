@@ -6,15 +6,22 @@ import static helpers.staticHelpers.TypeRecognizer.printTypeOf;//class Main_{ pu
 interface tt{
     void ahoj(String s);
 }
+class Hiden{
+    public int v;
 
+    public void visible(){ System.out.println("can yo usee me?"); }
+//    public int v =3;
+}
 public class Main {
+    public Hiden hiding = new Hiden();
     public static void main(String[] args) {
         //System.out.println() = p();   with type: pt(), formatted: pf()
         //this is template class
-        System.out.println(true && false || false);
-        System.out.println(false && false || true);
-        System.out.println(true || false && false);
-        System.out.println((true || false) && false);
+
+        Main m= new Main();
+        m.hiding.visible();
+        Hiden h= m.hiding;
+        h.visible();
 
 
 
