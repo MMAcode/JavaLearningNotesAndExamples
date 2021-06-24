@@ -1,6 +1,16 @@
 package main;
 
+/**
+ * on top level:
+ *  only one class or interface (not both together) can be public and must match file name
+ *  only public and none=default access modifiers can be used on class and interface
+ *
+ *  on inner class/interfaces any access modifier can be applied
+ */
+
+
 class Main1{
+    public interface i2{void mm();}
     public static void main(String [] args) { System.out.println("from main_"); }
     public static void testMe(){System.out.println("from main_ testme");};
 } // nothing from this class will be accessible in other packages
