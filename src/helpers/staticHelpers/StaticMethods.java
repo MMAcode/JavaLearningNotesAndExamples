@@ -1,8 +1,8 @@
-package helpers;
+package helpers.staticHelpers;
 
 import java.util.Arrays;
 
-public class StaticHelpers {
+public class StaticMethods {
 
 
     public static void p(Object o){ System.out.println(o); }

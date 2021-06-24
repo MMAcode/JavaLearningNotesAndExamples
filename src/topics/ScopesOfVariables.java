@@ -1,6 +1,6 @@
 package topics;
 
-import static helpers.StaticHelpers.p;
+import static helpers.staticHelpers.StaticMethods.p;
 
 public class ScopesOfVariables {
     static int i=1;

@@ -2,7 +2,6 @@ package topics;
 
 import java.util.Scanner;
 
-import static helpers.StaticHelpers.p;
 
 public class ScannerBehaviour {
     public static void main(String[] args) {
@@ -94,6 +93,8 @@ public class ScannerBehaviour {
  *          hasNext() will be submitted from command line by enter regardess the presence of the delimiter.
  *
  */
+int i=(int)(7 + 23.3d);
+        System.out.println(i);
 ////        System.out.println(s1.nextInt());
         Scanner s4 =new Scanner(System.in).useDelimiter(",");
 //                Scanner s4 =new Scanner(System.in);

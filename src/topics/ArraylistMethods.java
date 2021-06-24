@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import static helpers.StaticHelpers.p;
+import static helpers.staticHelpers.StaticMethods.p;
 
 public class ArraylistMethods {
     public static void main(String[] args) {
