@@ -25,6 +25,9 @@ public class Main {
         System.out.printf("%10d\n",732832); // d whole digits (numbers)
         System.out.printf("%3d\n",732832);
 
+        System.out.println("\nDECIMALS:\n");
+
+        System.out.printf("%.0f\n",732.832); //f decimals .0 decimals -> decimal point excluded -> 732
         System.out.printf("%13.2f\n",732.832d); //f decimals .3 decimal precision
         System.out.printf("%10.2f\n",7328320f);
 //        System.out.printf("%10.2f\n",7328320); // this doesn't compile as java is expecting decimal number
