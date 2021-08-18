@@ -12,7 +12,7 @@ public class ClassWithBuilder {
         this.str2 = b.str2;
         this.str3 = b.str3;
     }
-
+    //
     @Override
     public String toString() {
         return "ClassWithBuilder{" +
