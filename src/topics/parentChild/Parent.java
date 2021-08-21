@@ -4,9 +4,7 @@ public class Parent {
     int age = 100;
     int age2 = 200;
     void getAge(){
-        System.out.println("parent getAge: Parent"+age);
+        System.out.println("parent getAge: "+age);
     }
-    void parentGetAge(){
-        System.out.println("parent getAge: Parent"+age);
-    }
+    void getAge2(){ System.out.println("parent getAge2: "+age2); }
 }
