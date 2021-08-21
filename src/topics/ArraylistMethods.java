@@ -8,7 +8,9 @@ import static helpers.staticHelpers.StaticMethods.p;
 
 public class ArraylistMethods {
     public static void main(String[] args) {
-        List<Integer> l = new ArrayList<>(Arrays.asList(1,2,3));
+        // List<Integer> l = new ArrayList<>(Arrays.asList(1,2,3));
+        List<Integer> l = Arrays.asList(4,5,6,7); //simpler
+
         p(l);
         l.add(4);
         p(l);
