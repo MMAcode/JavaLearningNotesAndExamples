@@ -19,6 +19,10 @@ public class Main {
         // if child is casted to parent and child doesn't override parent's method,
         // parent's method will be implemented and therefore also parent's property will be used.
 
+        /**
+         * Summary: Avoid duplicating properties on child class; instead use/update properties of parent class.
+         */
+
 
     }
 }
