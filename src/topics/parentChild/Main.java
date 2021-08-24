@@ -23,6 +23,6 @@ public class Main {
          * Summary: Avoid duplicating properties on child class; instead use/update properties of parent class.
          */
 
-    //
+
     }
 }
