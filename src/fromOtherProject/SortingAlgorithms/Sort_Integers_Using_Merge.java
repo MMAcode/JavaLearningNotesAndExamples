@@ -11,11 +11,11 @@ public class Sort_Integers_Using_Merge {
 
     public Sort_Integers_Using_Merge(int... numbers) {
         unSortedList = Arrays.stream(numbers).boxed().collect(Collectors.toList());
-        // sortedList = sortMe(unSortedList);
-        sortedList = sortNewSimple(unSortedList);
+        sortedList = mergeSortUsingRecursion(unSortedList);
+        // sortedList = mergeSortUsingLoops(unSortedList);
     }
 
-    private List<Integer> sortNewSimple(List<Integer> numbers) {
+    private List<Integer> mergeSortUsingLoops(List<Integer> numbers) {
         //populate lists
         List<List<Integer>> lists = new ArrayList<>();
         List<List<Integer>> finalLists = lists;
@@ -45,12 +45,12 @@ public class Sort_Integers_Using_Merge {
         return lists.get(0);
     }
 
-    private List<Integer> sortMe(List<Integer> numbers) {
+    private List<Integer> mergeSortUsingRecursion(List<Integer> numbers) {
         if (numbers.size() <= 1) return numbers;
 
         int indexOfFirstElementOfSecondList = (int) (numbers.size() / 2);   //eg if 4 elements ->index=2; if 3 elements ->index=1
-        List<Integer> sortedSublistA = sortMe(new ArrayList<>(numbers.subList(0, indexOfFirstElementOfSecondList)));
-        List<Integer> sortedSublistB = sortMe(new ArrayList<>(numbers.subList(indexOfFirstElementOfSecondList, numbers.size())));
+        List<Integer> sortedSublistA = mergeSortUsingRecursion(new ArrayList<>(numbers.subList(0, indexOfFirstElementOfSecondList)));
+        List<Integer> sortedSublistB = mergeSortUsingRecursion(new ArrayList<>(numbers.subList(indexOfFirstElementOfSecondList, numbers.size())));
         //...goes into the rabbit hole... returns sorted lists
 
         return mergeSortedLists(sortedSublistA, sortedSublistB);
