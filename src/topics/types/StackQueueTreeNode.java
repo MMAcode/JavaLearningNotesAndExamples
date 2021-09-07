@@ -16,6 +16,29 @@ public class StackQueueTreeNode {
         this.value = value;
     }
 
+    public static void main(String[] args) {
+        Stack<Integer> s = new Stack();
+        s.push(1);
+        s.push(2);
+        s.push(3);
+        s.push(4);
+        s.pop();
+        System.out.println(s.peek());
+        
+        LinkedList<Integer> ll = new LinkedList();
+        ll.add(1);
+        ll.add(2);
+        ll.add(3);
+        ll.add(4);
+        ll.remove();
+        System.out.println(ll.peek());
+        System.out.println(ll.peekFirst());
+        System.out.println(ll.peekLast());
+        ll.addLast(5);
+        ll.addFirst(6);
+        ll.forEach(System.out::print);
+    }
+
     public StackQueueTreeNode getLeft() {
         return left;
     }
@@ -86,7 +109,7 @@ public class StackQueueTreeNode {
 
     private static void depthFirst(StackQueueTreeNode root) {
         // Stack<Integer> stackX = new Stack<>(); //also POSSIBLE , - stack of any objects
-        Stack<StackQueueTreeNode> stack = new Stack<>();
+        Stack<StackQueueTreeNode> stack = new Stack<>(); //outdated; use linnkedList instead
         stack.push(root);
         while (!stack.empty()) {
             StackQueueTreeNode node = stack.pop();
