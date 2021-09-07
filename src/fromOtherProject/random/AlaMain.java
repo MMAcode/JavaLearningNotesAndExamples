@@ -1,6 +1,7 @@
 package fromOtherProject.random;
 
-import categories.SortingAlgorithms.Sort_Integers_Using_Merge;
+
+import fromOtherProject.SortingAlgorithms.Sort_Integers_Using_Merge;
 
 public class AlaMain {
 

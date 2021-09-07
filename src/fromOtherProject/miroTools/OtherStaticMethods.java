@@ -1,8 +1,9 @@
 package fromOtherProject.miroTools;
 
-import categories.random.Database;
-import categories.random.Product;
-import archive.TreeNode;
+
+import fromOtherProject.archive.TreeNode;
+import fromOtherProject.random.Database;
+import fromOtherProject.random.Product;
 
 import java.util.*;
 

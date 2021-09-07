@@ -1,6 +1,7 @@
 package topics.types;
 
 import java.util.ArrayDeque;
+import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Stack;
 
@@ -70,6 +71,7 @@ public class StackQueueTreeNode {
 //          depthFirstRecursive(current.getLeft());
 //          }
     private static void breadthFirst(StackQueueTreeNode root) {
+        Queue<Integer> q = new LinkedList<>(); //also possible
         Queue<StackQueueTreeNode> queue = new ArrayDeque<>();
         queue.add(root);
         while (!queue.isEmpty()) {
@@ -83,6 +85,7 @@ public class StackQueueTreeNode {
     }
 
     private static void depthFirst(StackQueueTreeNode root) {
+        // Stack<Integer> stackX = new Stack<>(); //also POSSIBLE , - stack of any objects
         Stack<StackQueueTreeNode> stack = new Stack<>();
         stack.push(root);
         while (!stack.empty()) {
