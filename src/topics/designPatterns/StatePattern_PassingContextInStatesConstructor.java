@@ -1,6 +1,6 @@
 package topics.designPatterns;
 
-public class StatePattern {
+public class StatePattern_PassingContextInStatesConstructor {
 
     private interface StateInterface {
         void printState();
