@@ -5,7 +5,7 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
-public class ComparaterComparable {
+public class ComparatorComparable {
 
     static class Student implements Comparable<Student> {
         Integer age;
@@ -32,7 +32,12 @@ public class ComparaterComparable {
         //all equivalent
         public static final Comparator<Student> comparatorByWeight = (s1, s2) -> s1.weight.compareTo(s2.weight);
         public static final Comparator<Student> comparatorByWeight2 = Comparator.comparing(student -> student.getAge());
+        //simplest:
         public static final Comparator<Student> comparatorByWeight3 = Comparator.comparing(Student::getAge);
+        ///and multiple!!
+        public static final Comparator<Student> comparatorByMultiple12 = Comparator.comparing(Student::getAge).thenComparing(Student::getWeight);
+
+
     }
 
     public static void main(String[] args) {
